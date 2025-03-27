@@ -1,0 +1,6 @@
+**/.env
+**/.vscode/
+**/users_files/
+**/__pycache__/
+**/*.pyc
+**/*.sqlite

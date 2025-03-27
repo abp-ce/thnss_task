@@ -1,0 +1,7 @@
+services:
+  thnss:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    command: poetry run python src/technesis/main.py

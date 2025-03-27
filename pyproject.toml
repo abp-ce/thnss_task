@@ -1,0 +1,31 @@
+[project]
+name = "technesis"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Andrei Polyakov",email = "ap120368@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiogram (>=3.19.0,<4.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "pandas[excel] (>=2.2.3,<3.0.0)",
+    "aiohttp (>=3.11.14,<4.0.0)",
+    "playwright (>=1.51.0,<2.0.0)",
+]
+
+[tool.poetry]
+packages = [{include = "technesis", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8 = "^7.1.2"
+pytest = "^8.3.5"
+pytest-asyncio = "^0.26.0"
+flake8-import-order = "^0.18.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
